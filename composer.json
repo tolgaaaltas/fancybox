@@ -16,11 +16,11 @@
         "source": "https://github.com/phenomlab/fancybox",
         "forum": "https://discuss.flarum.org"
     },
-    "homepage": "https://paypal.me",
+    "homepage": "https://phenomlab.com",
     "funding": [
         {
             "type": "website",
-            "url": "/phenomlab"
+            "url": "https://phenomlab.com"
         }
     ],
     "require": {
