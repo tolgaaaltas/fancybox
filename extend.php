@@ -15,7 +15,7 @@ return [
     (new Extend\Frontend('forum'))
         ->content(function (Document $document) {
 			$document->head[] = '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.css">';
-			$document->head[] = '<script type="text/javascript" src="/js/jquery.min.js"></script>';
+			$document->head[] = '<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>';
 $document->head[] = '<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.js"></script>';
  $document->foot[] = <<<HTML
 <script>
