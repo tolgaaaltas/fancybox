@@ -1,5 +1,5 @@
 # Fancybox 🔗
-A minimal no non-sense flarum extension which enables all images to be presented in Fancybox by adding a data-fancybox attribute to all <img> tags
+A minimal no non-sense flarum extension which enables all images to be presented in Fancybox by adding a data-fancybox attribute to all img tags (except Emoji)
 
 ## Install
 `composer require phenomlab/fancybox`
