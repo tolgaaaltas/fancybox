@@ -20,7 +20,7 @@ $document->head[] = '<script type="text/javascript" src="https://cdnjs.cloudflar
  $document->foot[] = <<<HTML
 <script>
   flarum.core.compat.extend.extend(flarum.core.compat['components/CommentPost'].prototype, 'oncreate', function(output, vnode) {
-$("img").attr("data-fancybox", "gallery");
+$("img").not('.emoji').attr("data-fancybox", "");
   });
 </script>
 HTML;

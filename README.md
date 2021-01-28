@@ -9,3 +9,10 @@ A minimal no non-sense flarum extension which enables all images to be presented
 
 ## Remove
 `composer remove phenomlab/fancybox`
+
+## Release
+
+0.1 - Initial release
+0.1.1 - Fixed issue with gallery view being displayed, meaning all images are cycled
+0.1.1 - Fixed issue with emoji symbols being targeted incorrectly
+
