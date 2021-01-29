@@ -21,6 +21,9 @@ $document->head[] = '<script type="text/javascript" src="https://cdnjs.cloudflar
 <script>
   flarum.core.compat.extend.extend(flarum.core.compat['components/CommentPost'].prototype, 'oncreate', function(output, vnode) {
 $("img").not('.emoji').attr("data-fancybox", "");
+afterClose: function() {
+    $("#img").show();
+}
   });
 </script>
 HTML;
