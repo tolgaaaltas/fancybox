@@ -19,11 +19,13 @@ return [
             $document->head[] = '<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">';
             $document->foot[] = <<<HTML
 <script>
-  flarum.core.compat.extend.extend(flarum.core.compat['components/CommentPost'].prototype, 'oncreate', function(output, vnode) {
-$("img").wrap(function() {
- return "<a data-fancybox='gallery' href='" + this.src + "'/>";
- $('img').removeAttr('data-fancybox');
-});
+ flarum.core.compat.extend.extend(flarum.core.compat['components/CommentPost'].prototype, 'oncreate', function(output, vnode) {
+  const self = this;
+  this.$('p.Post-paragraph img').not('.emoji').each(function ()
+  {
+   var currentImage = $(this);
+     $(this).wrap("<a data-fancybox='gallery' href='" + currentImage.attr("src") + "' </a>");
+  });
 });
 </script>
 HTML;
